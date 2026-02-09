@@ -1,0 +1,41 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "payment-reminder-worker": "node cron/paymentReminderWorker.js",
+    "seed:payroll": "node scripts/seedPayrollConfig.js"
+  },
+  "devDependencies": {
+    "express": "^4.21.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.4.7",
+    "google-auth-library": "^10.4.2",
+    "googleapis": "^146.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "ms": "^2.1.3",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.1.9",
+    "openai": "^6.16.0",
+    "pdfkit": "^0.17.2",
+    "puppeteer": "^24.29.1",
+    "translate": "^3.0.1",
+    "translate-google": "^1.5.0"
+  }
+}
